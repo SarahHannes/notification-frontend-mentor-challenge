@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 <strong>Desktop 1024px</strong>
-<img src="screenshots/Desktop1024.png" width="600" alt="Desktop screenshot"/>
+<img src="screenshots/Desktop1024.png" alt="Desktop screenshot"/>
 
 <strong>Tablet 768px</strong>
 <img src="screenshots/Tablet768.png" alt="Tablet screenshot"/>
