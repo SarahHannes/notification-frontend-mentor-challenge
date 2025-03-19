@@ -1,0 +1,199 @@
+/* ------ Reset ------ */
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* ------ Colors ------ */
+
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+/* ------ Styling ------ */
+html {
+  width: 100%;
+  background-color: var(--very-light-grayish-blue);
+}
+
+main {
+  width: 800px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: -1px 1px 10px 0.1px rgba(0, 0, 0, 0.25);
+}
+
+/* header */
+.header {
+  justify-content: space-between;
+  padding: 20px 0;
+  gap: 20px;
+  align-items: center;
+
+  h1 {
+    font-size: 1.5rem;
+    color: var(--very-dark-blue);
+    font-weight: 800;
+  }
+
+  .badge {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 5px 15px;
+    font-weight: 500;
+    border-radius: 5px;
+  }
+}
+
+/* Page */
+.contents {
+  gap: 10px;
+}
+
+.notif-main {
+  width: 100%;
+
+  align-items: start;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.unread-notif {
+  background-color: var(--very-light-grayish-blue);
+}
+
+/* content of a notification */
+.meat {
+  flex-basis: 100%;
+  justify-content: center;
+  gap: 6px;
+}
+
+.notif-text {
+  margin: 0;
+  padding: 0;
+  color: var(--grayish-blue);
+}
+
+.name {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+.name:hover {
+  color: var(--blue);
+}
+
+a {
+  color: var(--dark-grayish-blue);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.grayed-out-text {
+  padding: 0;
+  margin: 0;
+  color: var(--grayish-blue);
+  font-weight: 500;
+}
+
+.new-msg {
+  padding: 10px;
+  line-height: 1.5rem;
+  outline: 1px solid var(--grayish-blue);
+  border-radius: 5px;
+  color: var(--dark-grayish-blue);
+}
+
+.new-msg:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-blue-1);
+  outline: none;
+}
+
+.unread {
+  margin-left: 5px;
+  vertical-align: middle;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--red);
+}
+
+.user-profile-pic {
+  margin: 0 20px 20px 20px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.notif-photo {
+  width: 50px;
+}
+
+.attachment:hover {
+  cursor: pointer;
+}
+
+.mark-as-read {
+  color: var(--grayish-blue);
+  font-weight: 500;
+}
+
+.mark-as-read:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+/* Utilities */
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.debug {
+  /* outline: 1px solid red; */
+  outline: none;
+}
+
+/* Mobile L (425px) and below */
+@media only screen and (max-device-width: 425px) {
+  html {
+    background-color: var(--white);
+  }
+
+  main {
+    width: 420px;
+    margin: 0 auto;
+    box-shadow: none;
+  }
+}
